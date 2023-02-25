@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Report Generator</title>
+    <style>
+        #section {
+            display: none;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static',filename='input.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+
+
+</head>
+
+<body>
+    
+    <form method='post'>
+    
+    <div class="collapsible">
+        <div class="collapsible-header"><h3>Current Depressive Symptoms</h3></div>
+    <div class="content">
+        <br>
+        <label for="mddCrrentDuration">Current Duration:</label>
+        <input type="text" id="mddCurrentDuration" name="mddCurrentDuration">
+        <br>
+
+
+            <p> Current Symptoms: </p>
+            
+            <ul id="mddCurrentSymptomList" class="multi-select" data-list-name="mddCurrentSymptomList">
+                <li><input type="checkbox" id="mddCurrentSymptomsSelectAll" class="selectAll"><label for="mddCurrentSymptomsSelectAll">Select All</label></li>
+                <br>
+                <li><input type="checkbox" id="mddCurrentSymptom1" name="mddCurrentSymptom" value="Depressive mood"><label for='mddCurrentSymptom1'>Depressive Mood</label></li>
+                <label style="padding-left: 60px">Example:</label>
+                <input type="text" id="mddCurrentSymptomExample1" name='mddCurrentSymptomExample'>
+
+                <li><input type="checkbox" id="mddCurrentSymptom2" name="mddCurrentSymptom" value="Anhedonia" style="padding-right: "><label for="mddCurrentSymptom2">Anhedonia</label></li>
+                <label style="padding-left: 60px">Example:</label>
+                <input type="text" id="mddCurrentSymptomExample2" name='mddCurrentSymptomExample'>
+
+                <li><input type="checkbox" id="mddCurrentSymptom3" name="mddCurrentSymptom" value="Changes in Appetite/Weight"><label for='mddCurrentSymptom3'>Changes in Appetite/Weight</label></li>
+                <label style="padding-left: 60px">Example:</label>
+                <input type="text" id="mddCurrentSymptomExample3" name='mddCurrentSymptomExample'>
+
+                <li><input type="checkbox" id="mddCurrentSymptom4" name="mddCurrentSymptom" value="Changes in Sleep"><label for='mddCurrentSymptom4'>Changes in Sleep</label></li>
+                <label style="padding-left: 60px">Example:</label>
+                <input type="text" id="mddCurrentSymptomExample4" name='mddCurrentSymptomExample'>
+
+                <li><input type="checkbox" id="mddCurrentSymptom5" name="mddCurrentSymptom" value="Changes in Psychomotor"><label for='mddCurrentSymptom5'>Changes in Psychomotor</label> </li> <label style="padding-left: 60px">Example:</label>
+                <input type="text" id="mddCurrentSymptomExample5" name='mddCurrentSymptomExample'>
+
+                <li><input type="checkbox" id="mddCurrentSymptom6" name="mddCurrentSymptom" value="Fatigue"><label for='mddCurrentSymptom6'>Fatigue</label></li>
+                <label style="padding-left: 60px">Example:</label>
+                <input type="text" id="mddCurrentSymptomExample6" name='mddCurrentSymptomExample'>
+
+                <li><input type="checkbox" id="mddCurrentSymptom7" name="mddCurrentSymptom" value="Worthlessness or Guilt"><label for='mddCurrentSymptom7'>Worthlessness or Guilt</label></li>
+                <label style="padding-left: 60px">Example:</label>
+                <input type="text" id="mddCurrentSymptomExample7" name='mddCurrentSymptomExample'>
+
+                <li><input type="checkbox" id="mddCurrentSymptom8" name="mddCurrentSymptom" value="Concentration Difficulties/Indecisiveness"><label for='mddCurrentSymptom8'>Concentration Difficulties/Indecisiveness</label></li>
+                <label style="padding-left: 60px">Example:</label>
+                <input type="text" id="mddCurrentSymptomExample8" name='mddCurrentSymptomExample'>
+                
+                <li><input type="checkbox" id="mddCurrentSymptom9" name="mddCurrentSymptom" value="Suicidality"><label for='mddCurrentSymptom9'>Suicidality</label></li>
+                <label style="padding-left: 60px">Passive suicidal ideation content and frequency:</label>
+                <input type="text" id="passiveIdeation" name='suicideDescription'>
+                <br>
+                <label style="padding-left: 60px">Active suicidal ideation content and frequency:</label>
+                <input type="text" id="activeIdeation" name='suicideDescription'>
+                <br>
+                <label style="padding-left: 100px">Plan:</label>
+                <input type="text" id="suicidalPlan" name='suicideDescription'>
+                <br>
+                <label style="padding-left: 100px">Intent:</label>
+                <input type="text" id="suicidalIntent" name='suicideDescription'>
+                <br>
+                <label style="padding-left: 60px">Past Suicidal Attempt:</label>
+                <input type="text" id="suicidalAttempt" name='suicideDescription'>
+
+                
+            </ul>
+        </div>
+        </div>
+        <br>
+            <input type="submit" value="Submit">
+        </form>
+   
+
+</body>
+
+</html>
