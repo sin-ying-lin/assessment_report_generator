@@ -61,7 +61,7 @@ def generate_report(input_data):
 
 Below is a demo of a report interface I created for assessing depression. Once you input depressive symptoms and optional expamples, the report generator will create a report written in professional medical tone following the diagnostic rule of MDD in the DSM-5. The whoe process tkaes less than 5 minutes, while typing the report on your own can easily take 15-30 minutes, depending on your familiarity with the medical lanaguage. 
 
-[jpg1]
+![alt text](https://github.com/sin-ying-lin/assessment_report_generator/pictures/interface.png)
 
 [jpg2]
 
