@@ -5,19 +5,29 @@ Installation:
 To get started with NLP-powered report generation, you'll need to create a Python virtual environment (venv) and install Flask and OpenAI for Python. You'll also need to add the OpenAI API to the environment.
 
 1. Create a Python virtual environment using the following command:
-```python3 -m venv myenv```
+```
+python3 -m venv myenv
+```
 
 2. Activate the virtual environment using the following command:
-```. myenv/bin/activate```
+```
+. myenv/bin/activate
+```
 
 3. Install Flask using the following command:
-```pip install Flask```
+```
+pip install Flask
+```
 
 4. Install the OpenAI Python package using the following command:
-```pip install openai```
+```
+pip install openai
+```
 
 5. Add your OpenAI API key to the environment using the following command:
-```export OPENAI_API_KEY=<your-api-key>```
+```
+export OPENAI_API_KEY=<your-api-key>
+```
 
 6. Create a Python Flask file, e.g., app.py, in your preferred code editor.
 
@@ -50,6 +60,32 @@ Below is a demo of a report interface I created for assessing depression. Once y
 [jpg2]
 
 You can find my code in my [gituhub].
+
+To use the package. Please follow the steps below. 
+
+1. Clone my GitHub repository. 
+```
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+2. Once you move into the cloned folder. Use the following command to activate the environemnt. 
+```
+. generator/bin/activate
+```
+
+3. Add your OpenAI API key to the environment using the following command:
+```
+export OPENAI_API_KEY=<your-api-key>
+```
+
+4. Lauch report generator
+```
+python generator.py
+```
+
+5. Copy the locohost address to your browser
+
+6. Try insert different informatino to the report generator interface. Click submit to generate a reprot. 
 
 Assessment for other common metnal disorders will be rolled out soon.
 
